@@ -1,0 +1,31 @@
+name: StaffChat
+version: '${project.version}'
+main: nathan.staffchat.StaffChat
+api-version: 1.18
+author: 'Elephant_1214'
+description: A basic staff chat plugin for my server, Zirkon Network
+commands:
+  staffchat:
+    description: Toggles staff chat or sends a message in staff chat if you include arguments
+    aliases:
+      - sc
+    permission: sc.use
+    usage: /<command> <args>
+  reloadstaffchat:
+    description: Reloads the plugin to get the latest config changes
+    aliases:
+      - reloadsc
+      - rsc
+    permission: sc.manage
+    usage: /<command>
+permissions:
+  sc.use:
+    description: Allows the player with this permission to use staff chat and related commands
+    default: op
+  sc.view:
+    description: Allows the player with this permission to see messages sent in staff chat
+    default: op
+  sc.manage:
+    description: Allows the player to reload the plugin
+    default: op
+

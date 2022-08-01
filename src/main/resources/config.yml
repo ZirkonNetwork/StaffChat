@@ -1,0 +1,20 @@
+# Make sure you surround all entries with quotation marks like in the default config!
+# All fields may be modified or use Bukkit color codes unless stated otherwise
+
+# The string that separates usernames and messages in staff chat
+content-separator: "&7: "
+
+# The prefix the plugin uses in all messages
+plugin-prefix: "&8[&cStaff Chat&8] &7"
+
+# The color of player names in staff chat
+default-username-color: "&3"
+
+# The prefix in front of all player names in staff chat
+sc-prefix: "&8[&cStaff Chat&8] &7"
+
+# The string used before a message in chat to send the message in staff chat (do not use color codes here!)
+use-sc-prefix: "#"
+
+# Do not touch anything below this point
+data:
