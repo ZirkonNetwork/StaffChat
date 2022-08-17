@@ -14,7 +14,7 @@ default-username-color: "&3"
 sc-prefix: "&8[&cStaff Chat&8] &7"
 
 # The string used before a message in chat to send the message in staff chat (do not use color codes here!)
-use-sc-prefix: "#"
+sc-message-prefix: "#"
 
 # Do not touch anything below this point
 data:

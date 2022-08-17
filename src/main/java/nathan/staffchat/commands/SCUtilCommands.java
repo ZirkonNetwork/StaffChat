@@ -22,7 +22,7 @@ public class SCUtilCommands implements CommandExecutor {
                 StaffChatData.loadToggleMap();
             }
 
-            final String success = Utils.translateColorCodes(StaffChat.getPluginPrefix() + "&3Reloaded Staff Chat v" + StaffChat.VERSION);
+            final String success = Utils.translateColorCodes(StaffChat.pluginPrefix + "&3Reloaded Staff Chat v" + StaffChat.VERSION);
 
             if (sender instanceof Player) {
                 sender.sendMessage(success);

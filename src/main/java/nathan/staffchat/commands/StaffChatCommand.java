@@ -23,7 +23,7 @@ public class StaffChatCommand implements CommandExecutor {
                 StaffChat.sendStaffMessage(displayName, Utils.msgBuilder(args));
                 return true;
             } else if (!(sender instanceof Player)) {
-                sender.sendMessage(Utils.translateColorCodes(StaffChat.getPluginPrefix() + "&4Non-player users must include a message with this command!"));
+                sender.sendMessage(Utils.translateColorCodes(StaffChat.pluginPrefix + "&4Non-player users must include a message with this command!"));
                 return true;
             } else {
                 if (!StaffChatData.toggleMap.containsKey(((Player) sender).getUniqueId())) {
@@ -32,7 +32,7 @@ public class StaffChatCommand implements CommandExecutor {
                     StaffChatData.toggleMap.put(((Player) sender).getUniqueId(), !StaffChatData.toggleMap.get(((Player) sender).getUniqueId()));
                 }
 
-                sender.sendMessage(Utils.translateColorCodes(StaffChat.getPluginPrefix() + "Staff chat toggled " + (StaffChatData.toggleMap.get(((Player) sender).getUniqueId()) ? "&aon" : "&coff")));
+                sender.sendMessage(Utils.translateColorCodes(StaffChat.pluginPrefix + "Staff chat toggled " + (StaffChatData.toggleMap.get(((Player) sender).getUniqueId()) ? "&aon" : "&coff")));
                 return true;
             }
         }

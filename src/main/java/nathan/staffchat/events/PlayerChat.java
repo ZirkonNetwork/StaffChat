@@ -13,7 +13,7 @@ public class PlayerChat implements Listener {
     public void playerChatEvent(AsyncPlayerChatEvent event) {
         Player player = event.getPlayer();
 
-        if (player.hasPermission("sc.use") && event.getMessage().startsWith(StaffChat.getUseScPrefix().toLowerCase())) {
+        if (player.hasPermission("sc.use") && event.getMessage().startsWith(StaffChat.scMessagePrefix.toLowerCase())) {
             StaffChat.sendStaffMessage(event.getPlayer().getDisplayName(), event.getMessage().substring(1));
             event.setCancelled(true);
         } else if (player.hasPermission("sc.use") && (StaffChatData.toggleMap.containsKey(player.getUniqueId()) && StaffChatData.toggleMap.get(player.getUniqueId()))) {

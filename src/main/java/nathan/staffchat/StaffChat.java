@@ -12,14 +12,14 @@ import java.util.Objects;
 
 public final class StaffChat extends JavaPlugin {
 
-    public static final String VERSION = "1.1";
+    public static final String VERSION = "1.2.0";
 
     public static JavaPlugin plugin = null;
     private static String contentSeparator = null;
-    private static String pluginPrefix = null;
+    public static String pluginPrefix = null;
     private static String scUsernameColor = null;
     private static String scChatPrefix = null;
-    private static String useScPrefix = null;
+    public static String scMessagePrefix = null;
 
     @Override
     public void onEnable() {
@@ -34,7 +34,7 @@ public final class StaffChat extends JavaPlugin {
         pluginPrefix = this.getConfig().getString("plugin-prefix");
         scUsernameColor = this.getConfig().getString("default-username-color");
         scChatPrefix = this.getConfig().getString("sc-prefix");
-        useScPrefix = this.getConfig().getString("use-sc-prefix");
+        scMessagePrefix = this.getConfig().getString("sc-message-prefix");
 
         Objects.requireNonNull(this.getCommand("staffchat")).setExecutor(new StaffChatCommand());
         Objects.requireNonNull(this.getCommand("reloadstaffchat")).setExecutor(new SCUtilCommands());
@@ -61,13 +61,5 @@ public final class StaffChat extends JavaPlugin {
                 player.sendMessage(stringToSend);
             }
         }
-    }
-
-    public static String getPluginPrefix() {
-        return pluginPrefix;
-    }
-
-    public static String getUseScPrefix() {
-        return useScPrefix;
     }
 }

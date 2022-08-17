@@ -1,8 +1,7 @@
 name: StaffChat
 version: '${project.version}'
 main: nathan.staffchat.StaffChat
-api-version: 1.18
-author: 'Elephant_1214'
+author: "Elephant_1214"
 description: A basic staff chat plugin for my server, Zirkon Network
 commands:
   staffchat:
