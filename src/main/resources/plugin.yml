@@ -22,7 +22,7 @@ permissions:
     description: Allows usage of /staffchat for toggling and sending messages
     default: op
   sc.view:
-    description: Makes messages in staff chat visible to the player
+    description: Makes messages sent in staff chat visible to the player
     default: op
   sc.manage:
     description: Allows the player to reload the plugin
