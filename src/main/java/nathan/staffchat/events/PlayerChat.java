@@ -17,7 +17,7 @@ public class PlayerChat implements Listener {
             StaffChat.sendStaffMessage(event.getPlayer().getDisplayName(), event.getMessage().substring(1));
             event.setCancelled(true);
         } else if (player.hasPermission("sc.use") && (StaffChatData.toggleMap.containsKey(player.getUniqueId()) && StaffChatData.toggleMap.get(player.getUniqueId()))) {
-            StaffChat.sendStaffMessage(event.getPlayer().getDisplayName(), event.getMessage().substring(1));
+            StaffChat.sendStaffMessage(event.getPlayer().getDisplayName(), event.getMessage());
             event.setCancelled(true);
         }
     }
