@@ -19,10 +19,10 @@ commands:
     usage: /<command>
 permissions:
   sc.use:
-    description: Allows the player with this permission to use staff chat and related commands
+    description: Allows usage of /staffchat for toggling and sending messages
     default: op
   sc.view:
-    description: Allows the player with this permission to see messages sent in staff chat
+    description: Makes messages in staff chat visible to the player
     default: op
   sc.manage:
     description: Allows the player to reload the plugin

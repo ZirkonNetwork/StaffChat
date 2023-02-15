@@ -7,13 +7,13 @@ content-separator: "&7: "
 # The prefix the plugin uses in all messages
 plugin-prefix: "&8[&cStaff Chat&8] &7"
 
-# The color of player names in staff chat
+# The color of player names in staff chat, overridden by any plugins that already change this or add a prefix
 default-username-color: "&3"
 
 # The prefix in front of all player names in staff chat
 sc-prefix: "&8[&cStaff Chat&8] &7"
 
-# The string used before a message in chat to send the message in staff chat (do not use color codes here!)
+# The string used before a message in chat to send the message in staff chat. Do not use color codes here!
 sc-message-prefix: "#"
 
 # Do not touch anything below this point
