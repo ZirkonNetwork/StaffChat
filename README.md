@@ -3,8 +3,7 @@ Simple staff chat plugin for Zirkon Network that allows you to send a staff chat
 ## Building
 Run `clean` and `package` with Maven then put the jar in your plugins folder and restart your server.
 ## Usage
-Once in-game, use `/staffchat` to toggle staff chat and message away, use `/staffchat <message>` to send the included message, or put a\
-single hashtag (`#`) in front of your message (e.x. `#Hello there`) to use staff chat without any commands.
+Once in-game, use `/staffchat` to toggle staff chat and message away, use `/staffchat <message>` to send the included message, or put a single hashtag (`#`) in front of your message (e.x. `#Hello there`) to use staff chat without any commands.
 ## Permissions
 - `sc.use`
   - Allows usage of `/staffchat` for toggling and sending messages
